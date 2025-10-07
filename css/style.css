@@ -4,6 +4,8 @@
     --background-color: #000000;
     --accent-color: #646903; 
     --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --swiper-theme-color: var(--accent-color);
+    --swiper-navigation-size: 30px;
 }
 
 * {
@@ -131,21 +133,9 @@ header {
     color: var(--background-color);
 }
 
-
-
-
-
-
-
-
-
-
-
 /* =================================
-   ABOUT SECTION
+   ABOUT PAGE SECTION
    ================================= */
- 
-
 .about-section {
     padding-top: 150px; 
     padding-bottom: 50px;
@@ -185,7 +175,6 @@ header {
     position: relative;
 }
 
-
 .about-text h2::after {
     content: '';
     position: absolute;
@@ -204,4 +193,73 @@ header {
 
 .about-text p:not(:last-child) {
     margin-bottom: 1.5rem; 
+}
+
+/* =================================
+   REUSABLE SECTION STYLES
+   ================================= */
+.portfolio-section {
+    /* Меняем вертикальные отступы: сверху меньше, снизу больше */
+    padding: 100px 5% 150px 5%; 
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.3rem; /* Уменьшаем размер шрифта (было 3rem) */
+    margin-bottom: 2.5rem; /* Уменьшаем отступ снизу (было 3rem) */
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    width: 70px;
+    height: 4px;
+    background-color: var(--accent-color);
+}
+
+/* =================================
+   PORTFOLIO PAGE SECTION (CAROUSEL)
+   ================================= */
+/* =================================
+   PORTFOLIO PAGE SECTION (FILTERABLE GALLERY)
+   ================================= */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.filter-buttons .btn {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.filter-buttons .btn.is-active {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+.photo-grid {
+    margin: 0 auto;
+}
+
+.grid-item {
+    width: 32%; /* Ширина каждого элемента (примерно 1/3) */
+    margin-bottom: 2%;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
 }

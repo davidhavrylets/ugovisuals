@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <header>
+   <header>
         <nav class="navbar">
             <div class="logo">
                 <a href="index.html">UGOVISUALS</a>
@@ -27,32 +27,45 @@
     <main>
         <section class="portfolio-section">
             <h2 class="section-title">Nos Photos</h2>
+
+            <div class="filter-buttons">
+                <button class="btn is-active" data-filter="*">Tous</button>
+                <button class="btn" data-filter=".mariage">Mariage</button>
+                <button class="btn" data-filter=".entreprise">Entreprise</button>
+                <button class="btn" data-filter=".portrait">Portrait</button>
+            </div>
+
             <div class="photo-grid">
-                <div class="grid-item">
-                    <a href="https://via.placeholder.com/800x1200" target="_blank"><img src="https://via.placeholder.com/400x600" alt="Description de la photo 1"></a>
+                <div class="grid-item mariage">
+                    <img src="https://images.unsplash.com/photo-1588262272200-5cb2883c5fab?w=500" alt="Mariage 1">
                 </div>
-                <div class="grid-item">
-                    <a href="https://via.placeholder.com/1200x800" target="_blank"><img src="https://via.placeholder.com/600x400" alt="Description de la photo 2"></a>
+                <div class="grid-item mariage">
+                    <img src="https://images.unsplash.com/photo-1519741497674-6114d186b25a?w=500" alt="Mariage 2">
                 </div>
-                <div class="grid-item">
-                    <a href="https://via.placeholder.com/1000x800" target="_blank"><img src="https://via.placeholder.com/500x400" alt="Description de la photo 3"></a>
+                
+                <div class="grid-item entreprise">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=500" alt="Entreprise 1">
                 </div>
-                <div class="grid-item">
-                    <a href="https://via.placeholder.com/800x800" target="_blank"><img src="https://via.placeholder.com/400x400" alt="Description de la photo 4"></a>
+                 <div class="grid-item portrait">
+                    <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?w=500" alt="Portrait 1">
                 </div>
-                <div class="grid-item">
-                    <a href="https://via.placeholder.com/1200x800" target="_blank"><img src="https://via.placeholder.com/600x400" alt="Description de la photo 5"></a>
+
+                <div class="grid-item mariage">
+                    <img src="https://images.unsplash.com/photo-1523438943922-38cd5938053c?w=500" alt="Mariage 3">
                 </div>
-                <div class="grid-item">
-                    <a href="https://via.placeholder.com/800x1200" target="_blank"><img src="https://via.placeholder.com/400x600" alt="Description de la photo 6"></a>
+
+                <div class="grid-item portrait">
+                    <img src="https://images.unsplash.com/photo-1586788209829-d7945d812586?w=500" alt="Portrait 2">
                 </div>
-                 <div class="grid-item">
-                    <a href="https://via.placeholder.com/1000x800" target="_blank"><img src="https://via.placeholder.com/500x400" alt="Description de la photo 7"></a>
+
+                <div class="grid-item entreprise">
+                    <img src="https://images.unsplash.com/photo-1522204523234-8729aa6e3d54?w=500" alt="Entreprise 2">
                 </div>
             </div>
         </section>
     </main>
 
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
