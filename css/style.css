@@ -2,7 +2,7 @@
     --primary-color: #ffffff;
     --secondary-color: #a0a0a0;
     --background-color: #000000;
-    --accent-color: #f39c12; 
+    --accent-color: #646903; 
     --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -129,4 +129,79 @@ header {
 .btn:hover {
     background-color: var(--accent-color);
     color: var(--background-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =================================
+   ABOUT SECTION
+   ================================= */
+ 
+
+.about-section {
+    padding-top: 150px; 
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.about-image {
+    flex: 1; 
+    max-width: 400px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.about-text {
+    flex: 1.5; 
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+
+.about-text h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 70px;
+    height: 4px;
+    background-color: var(--accent-color);
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.7; 
+    color: var(--secondary-color);
+}
+
+.about-text p:not(:last-child) {
+    margin-bottom: 1.5rem; 
 }
